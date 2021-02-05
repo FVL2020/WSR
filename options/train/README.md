@@ -1,6 +1,6 @@
 # Description of Train Options
 
-Let us take [`train_WSR.json`](./train_WSR_example.json) as an example. 
+Let us take [`train_WSR.json`](./train_WSR.json) as an example. 
 
 **Note**: Before you run `python train.py -opt options/train/*.json`, please carefully check options: `"scale"`, `"dataroot_HR"`, `"dataroot_LR"`, `"networks"` and `"pretrained_path"` (if `"pretrain"` option is set to `"resume"` or `"finetune"`).
 
@@ -44,7 +44,7 @@ Let us take [`train_WSR.json`](./train_WSR_example.json) as an example.
     // networks specifications
     "networks": {
         "which_model": "WSR", // network name
-        "num_features": 4, // number of base feature maps
+        "num_features": 64, // number of base feature maps
         "in_channels": 3, // number of input channels
         "out_channels": 3, // number of output channels
         "num_groups": 10 // number of S-IMDBs (N)
